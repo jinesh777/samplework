@@ -1,0 +1,48 @@
+{
+  "name": "sample",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "grunt": "1.0.1",
+    "mocha": "^6.2.2",
+    "sails": "^1.1.0",
+    "sails-disk": "^1.1.2",
+    "sails-hook-grunt": "^3.1.1",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^1.5.5",
+    "sails-memory": "^0.10.7",
+    "sails-mongo": "^1.0.1",
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "@sailshq/eslint": "^4.19.3",
+    "barrels": "^1.6.5",
+    "fixtures": "0.0.2",
+    "grunt-apidoc": "^0.11.0",
+    "mocha": "^6.2.2",
+    "sails-disk": "^1.1.2",
+    "sails-memory": "^0.10.7",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "debug": "node debug app.js",
+    "test": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/unit/controllers/*.test.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jinesh777/sample.git"
+  },
+  "author": "Jinesh John",
+  "license": "",
+  "engines": {
+    "node": "^11.10"
+  }
+}
